@@ -183,7 +183,7 @@ def statements(snap: dict) -> list[dict]:
 
 
 def suite_tips(snap: dict) -> list[dict]:
-    return (snap.get("records") or {}).get("suite", [])
+    return [{**t, "link": saydo.suite_link(t.get("link"))} for t in (snap.get("records") or {}).get("suite", [])]
 
 
 def page_data(snap: dict, records: list[dict], sd: dict) -> dict:
@@ -245,6 +245,9 @@ ALLOWED_URL_PREFIXES = (
     "https://readout.theintelligence.company", "https://theintelligence.company",
     "https://github.com/metacog-osint/", "https://creativecommons.org/",
 )
+# EEAS's press page also lists Commission items on its subdomains (transport.ec.europa.eu, ...); they fall under the
+# same reuse decision (2011/833/EU) the EEAS lane records, and Readout keeps only their title, date and link.
+EU_COMMISSION_HOST = re.compile(r"^https://[a-z0-9-]+\.ec\.europa\.eu/")
 SUITE_HOST = re.compile(r"^https://[a-z0-9-]+\.theintelligence\.company(/|$)")
 URL_IN_TEXT = re.compile(r"https?://[^\s\"'<>)\]]+")
 # Kept out of the published output: UN and AU text (their terms), Kremlin images (RIA/TASS), raw feed bodies.
@@ -265,7 +268,7 @@ def terms_scan(paths: list[Path]) -> list[str]:
                 errs.append(f"{p.name}: {m!r} is in the published output (UN or AU text, or a Kremlin image)")
         for m in URL_IN_TEXT.finditer(txt):
             u = m.group(0)
-            if not (u.startswith(ALLOWED_URL_PREFIXES) or SUITE_HOST.match(u)):
+            if not (u.startswith(ALLOWED_URL_PREFIXES) or SUITE_HOST.match(u) or EU_COMMISSION_HOST.match(u)):
                 errs.append(f"{p.name}: URL outside the allowed publisher pages: {u[:80]}")
         if p.suffix in (".json", ".geojson"):
             doc = json.loads(txt)
