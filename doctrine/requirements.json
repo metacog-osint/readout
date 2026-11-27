@@ -1,0 +1,53 @@
+{
+  "program": "readout",
+  "version": "0.1",
+  "review_by": "2027-02-25",
+  "requirements": [
+    {
+      "id": "RO-REQ-1",
+      "type": "standing",
+      "question": "What do governments and international bodies say, decide and vote on about conflicts, deployments and crises, and does what they say match what the suite's sensors see?"
+    },
+    {
+      "id": "RO-PIR-1",
+      "type": "pir",
+      "parent": "RO-REQ-1",
+      "question": "What are the Russian, UK and EU governments saying in their own official statements, which countries do they name, and do they claim de-escalation, deny an act, give an assurance, threaten or accuse?",
+      "series": [
+        "kremlin_en",
+        "govuk_news",
+        "eeas_press"
+      ]
+    },
+    {
+      "id": "RO-PIR-2",
+      "type": "pir",
+      "parent": "RO-REQ-1",
+      "question": "Which resolutions has the UN Security Council adopted or failed to adopt, on which countries, unanimously or not, and was a veto cast?",
+      "series": [
+        "un_press_sc"
+      ]
+    },
+    {
+      "id": "RO-PIR-3",
+      "type": "pir",
+      "parent": "RO-REQ-1",
+      "question": "Which communiqués and press statements has the African Union Peace and Security Council issued, and on which countries?",
+      "series": [
+        "au_psc"
+      ]
+    },
+    {
+      "id": "RO-EEI-1",
+      "type": "eei",
+      "parent": "RO-PIR-1",
+      "question": "When a statement claims calm (de-escalation, denial, assurance), did other TIC programs publish anomalies or warnings in the same countries within 72 hours?",
+      "series": [
+        "kremlin_en",
+        "govuk_news",
+        "eeas_press",
+        "tic_suite_tips"
+      ]
+    }
+  ]
+}

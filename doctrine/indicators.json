@@ -1,0 +1,32 @@
+{
+  "program": "readout",
+  "version": "0.1",
+  "note": "RO-IND-1 is PROPOSED, not adopted: it marks a candidate say-do gap on the page and in the item's say_do block, and moves no tier (feed.rule() returns routine for every item; check recomputes it). It stays a proposal until it is adopted, changed or dropped. No warning problem, so no item carries an indicator_id.",
+  "warning_problems": [],
+  "indicators": [
+    {
+      "id": "RO-IND-1",
+      "text": "An official statement claims calm (a ceasefire, a denial, an assurance) while other TIC programs see unusual activity in the countries it names.",
+      "series": "tic_suite_tips",
+      "rule": "PROPOSED 25 Nov 2026, not adopted: a statement whose claim words include deescalation, denial or assurance, paired with anomaly or warning items from at least 2 independence groups (other TIC programs, not stale) that share a country it names and whose data_as_of is within 72 hours of it. Shown as a candidate say-do gap; tier stays routine.",
+      "gentry": {
+        "predictive": false,
+        "diagnostic": false,
+        "unambiguous": false,
+        "collectable": true
+      }
+    },
+    {
+      "id": "RO-IND-2",
+      "text": "An official statement warns of a response while other TIC programs see unusual activity in the countries it names.",
+      "series": "tic_suite_tips",
+      "rule": "Information only (readout-0.1): a statement whose claim words include threat, paired with any non-stale anomaly or warning item that shares a country it names within 72 hours. Shown as activity near a threat; no tier, no adoption needed because it marks nothing.",
+      "gentry": {
+        "predictive": false,
+        "diagnostic": false,
+        "unambiguous": false,
+        "collectable": true
+      }
+    }
+  ]
+}

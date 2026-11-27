@@ -1,0 +1,36 @@
+{
+  "program": "readout",
+  "version": "0.1",
+  "assumptions": [
+    {
+      "id": "RO-ASM-1",
+      "assumption": "A fixed word list finds the kind of claim a statement makes. It does not read meaning: negations ('there will be no ceasefire'), quotations of others and mixed statements are misread.",
+      "status": "untested",
+      "test": "Hand-label 100 statements from the first month against the classes; report precision and recall per class on the method page before any rule uses them."
+    },
+    {
+      "id": "RO-ASM-2",
+      "assumption": "Activity in the same country within 72 hours of a calm claim is worth a look. It is not evidence that the claim was false: the activity may be by another party, unrelated, routine for that place, or the claim may be about somewhere else in that country.",
+      "status": "untestable",
+      "test": "Stated on the page, in the feed note and in every candidate-gap summary. RO-IND-1 stays proposed and moves no tier."
+    },
+    {
+      "id": "RO-ASM-3",
+      "assumption": "The suite bus (COP's today.geojson) carries the other programs' current anomalies and warnings, so a missing pair means the sensors saw nothing, not that the bus was down.",
+      "status": "untested",
+      "test": "The suite lane's health and problems list say when the bus or a direct feed failed; the page shows say-do as not read then. Check pairs against COP's own map for a week."
+    },
+    {
+      "id": "RO-ASM-4",
+      "assumption": "Countries named in a statement are what it is about. A statement can name a country in passing (a visit, a list of attendees) and miss one it is about (the 'occupied territories').",
+      "status": "strained",
+      "test": "GOV.UK's own world-location tags are used first where they exist; country names, demonyms and capitals are matched in the title and kept text. Review unmatched statements in the first month."
+    },
+    {
+      "id": "RO-ASM-5",
+      "assumption": "Each publisher's English feed carries all its statements. The Kremlin's English site lags and omits some Russian-language items; GOV.UK search is limited to three departments; the EEAS page is read two pages deep.",
+      "status": "holds",
+      "test": "Stated on the method page. Counts per run are in the lanes block."
+    }
+  ]
+}

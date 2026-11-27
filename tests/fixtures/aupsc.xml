@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Readout test fixture: made-up items in RSS 2.0 shape (peaceau.org's real format was not read) -->
+<rss version="2.0"><channel><title>Peace and Security Department</title>
+<item><title>Communiqué of the 1290th meeting of the PSC held on 20 November 2026 on the situation in Sudan [fixture: AU text]</title><link>http://www.peaceau.org/en/article/communique-1290-fixture</link><pubDate>Fri, 21 Nov 2026 09:00:00 +0300</pubDate></item>
+<item><title>Press statement of the 1289th meeting of the PSC held on 18 November 2026 on the Sahel [fixture: AU text]</title><link>http://www.peaceau.org/en/article/press-1289-fixture</link><pubDate>Wed, 19 Nov 2026 09:00:00 +0300</pubDate></item>
+<item><title>Commissioner attends a workshop (fixture)</title><link>http://www.peaceau.org/en/article/workshop-fixture</link><pubDate>Tue, 18 Nov 2026 09:00:00 +0300</pubDate></item>
+</channel></rss>

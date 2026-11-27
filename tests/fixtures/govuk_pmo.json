@@ -1,0 +1,71 @@
+{
+ "results": [
+  {
+   "title": "PM call with President Zelenskyy",
+   "description": "Fixture text. The Prime Minister spoke to President Zelenskyy of Ukraine.",
+   "link": "/government/news/pm-call-zelenskyy-fixture",
+   "public_timestamp": "2026-11-25T18:00:00.000+00:00",
+   "content_store_document_type": "news_story",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": [
+    {
+     "slug": "ukraine",
+     "title": "ukraine"
+    }
+   ]
+  },
+  {
+   "title": "UK and Poland strengthen air defence cooperation",
+   "description": "Fixture text.",
+   "link": "/government/news/uk-poland-air-defence-fixture",
+   "public_timestamp": "2026-11-24T12:00:00.000+00:00",
+   "content_store_document_type": "news_story",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": [
+    {
+     "slug": "poland",
+     "title": "poland"
+    }
+   ]
+  },
+  {
+   "title": "Fixture PMO news 1",
+   "description": "Fixture text.",
+   "link": "/government/news/fixture-pmo-1",
+   "public_timestamp": "2026-11-11T08:00:00.000+00:00",
+   "content_store_document_type": "news_story",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": []
+  },
+  {
+   "title": "Fixture PMO news 2",
+   "description": "Fixture text.",
+   "link": "/government/news/fixture-pmo-2",
+   "public_timestamp": "2026-11-12T08:00:00.000+00:00",
+   "content_store_document_type": "news_story",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": []
+  }
+ ],
+ "total": 4
+}

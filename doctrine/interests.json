@@ -1,0 +1,24 @@
+{
+  "program": "readout",
+  "areas": {},
+  "interests": [
+    {
+      "id": "RO-INT-1",
+      "about": "The 'do' side of the say-do check: other programs' anomalies and warnings anywhere, to hold against what statements naming the same countries say within 72 hours.",
+      "programs": [
+        "watchfloor",
+        "noisefloor",
+        "wake",
+        "blackout",
+        "cordon",
+        "launch"
+      ],
+      "anywhere": true,
+      "tiers": [
+        "anomaly",
+        "warning"
+      ],
+      "indicator_id": "RO-IND-1"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/static/xsl/feed.xsl?571da04668" ?>
+<!-- Readout test fixture: made-up entries in the shape of en.kremlin.ru/events/all/feed (not real statements) -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title type="text">Website of the President of Russia: All Publications</title>
+  <author><name>Presidential Press and Information Office</name></author>
+  <updated>2026-11-25T21:04:10+04:00</updated>
+  <id>http://en.kremlin.ru/events/all/feed</id>
+  <link href="http://en.kremlin.ru/events/all/feed" rel="self"/>
+  <link href="http://en.kremlin.ru/events/all/feed/page/2" rel="next"/>
+  <entry>
+    <title>Executive Order on Early Termination of Powers of Murmansk Region Governor</title>
+    <id>http://en.kremlin.ru/acts/news/81348</id>
+    <updated>2026-11-25T21:01:20+04:00</updated>
+    <published>2026-11-25T20:30:00+04:00</published>
+    <link href="http://en.kremlin.ru/acts/news/81348" hreflang="en" rel="alternate" type="text/html"/>
+    <summary type="html"></summary>
+    <content type="html">&lt;p&gt;The President signed the Executive Order &lt;i&gt;On the Early Termination of the Powers of the Murmansk Region Governor&lt;/i&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Press statements following Russian-Bruneian talks</title>
+    <id>http://en.kremlin.ru/events/president/transcripts/81344</id>
+    <updated>2026-11-25T19:00:48+04:00</updated>
+    <published>2026-11-25T15:45:00+04:00</published>
+    <link href="http://en.kremlin.ru/events/president/transcripts/81344" hreflang="en" rel="alternate" type="text/html"/>
+    <summary type="html"></summary>
+    <content type="html">&lt;p&gt;&lt;img src="http://static.kremlin.ru/media/events/photos/medium/abc.jpg" alt=""/&gt;Fixture text. We discussed trade and energy cooperation between Russia and Brunei.&lt;/p&gt;&lt;p&gt;Our countries do not seek confrontation with anyone.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Meeting with Security Council permanent members</title>
+    <id>http://en.kremlin.ru/events/president/news/81342</id>
+    <updated>2026-11-24T15:10:00+04:00</updated>
+    <published>2026-11-24T14:00:00+04:00</published>
+    <link href="http://en.kremlin.ru/events/president/news/81342" hreflang="en" rel="alternate" type="text/html"/>
+    <summary type="html"></summary>
+    <content type="html">&lt;p&gt;Fixture text. The discussion focused on the situation in Ukraine. Reports of Russian drones over Poland are baseless and fabricated, the meeting heard. Russia's exercises near the border are purely defensive.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Telephone conversation with President of Turkey</title>
+    <id>http://en.kremlin.ru/events/president/news/81340</id>
+    <updated>2026-11-24T10:30:00+04:00</updated>
+    <published>2026-11-24T10:00:00+04:00</published>
+    <link href="http://en.kremlin.ru/events/president/news/81340" hreflang="en" rel="alternate" type="text/html"/>
+    <summary type="html"></summary>
+    <content type="html">&lt;p&gt;Fixture text. The leaders discussed a possible ceasefire on energy infrastructure and the Black Sea.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Statement on strikes on Russian territory</title>
+    <id>http://en.kremlin.ru/events/president/news/81339</id>
+    <updated>2026-11-23T18:00:00+04:00</updated>
+    <published>2026-11-23T18:00:00+04:00</published>
+    <link href="http://en.kremlin.ru/events/president/news/81339" hreflang="en" rel="alternate" type="text/html"/>
+    <summary type="html"></summary>
+    <content type="html">&lt;p&gt;Fixture text. The Kiev regime's attacks on civilian infrastructure will be met with a mirror response.&lt;/p&gt;</content>
+  </entry>
+</feed>

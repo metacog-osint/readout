@@ -1,0 +1,135 @@
+{
+ "results": [
+  {
+   "title": "UK statement to the OSCE on Russia's war against Ukraine",
+   "description": "Fixture text. UK Ambassador says Russia's claims of restraint are not borne out by its attacks on Ukraine's energy grid.",
+   "link": "/government/speeches/uk-statement-osce-fixture",
+   "public_timestamp": "2026-11-24T16:20:00.000+00:00",
+   "content_store_document_type": "speech",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": [
+    {
+     "slug": "ukraine",
+     "title": "ukraine"
+    },
+    {
+     "slug": "uk-and-the-osce",
+     "title": "uk-and-the-osce"
+    },
+    {
+     "slug": "russia",
+     "title": "russia"
+    }
+   ]
+  },
+  {
+   "title": "Foreign Secretary calls for ceasefire in Sudan",
+   "description": "Fixture text. The UK calls on both parties to agree a humanitarian truce.",
+   "link": "/government/news/sudan-ceasefire-fixture",
+   "public_timestamp": "2026-11-23T11:00:00.000+00:00",
+   "content_store_document_type": "press_release",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": [
+    {
+     "slug": "sudan",
+     "title": "sudan"
+    }
+   ]
+  },
+  {
+   "title": "Transparency data: FCDO spending",
+   "description": "Fixture text.",
+   "link": "/government/publications/fcdo-spend-fixture",
+   "public_timestamp": "2026-11-23T09:00:00.000+00:00",
+   "content_store_document_type": "transparency",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": []
+  },
+  {
+   "title": "Fixture FCDO news 1",
+   "description": "Fixture text.",
+   "link": "/government/news/fixture-fcdo-1",
+   "public_timestamp": "2026-11-21T08:00:00.000+00:00",
+   "content_store_document_type": "news_story",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": []
+  },
+  {
+   "title": "Fixture FCDO news 2",
+   "description": "Fixture text.",
+   "link": "/government/news/fixture-fcdo-2",
+   "public_timestamp": "2026-11-22T08:00:00.000+00:00",
+   "content_store_document_type": "news_story",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": []
+  },
+  {
+   "title": "Fixture FCDO news 3",
+   "description": "Fixture text.",
+   "link": "/government/news/fixture-fcdo-3",
+   "public_timestamp": "2026-11-23T08:00:00.000+00:00",
+   "content_store_document_type": "news_story",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": []
+  },
+  {
+   "title": "Fixture FCDO news 4",
+   "description": "Fixture text.",
+   "link": "/government/news/fixture-fcdo-4",
+   "public_timestamp": "2026-11-24T08:00:00.000+00:00",
+   "content_store_document_type": "news_story",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": []
+  },
+  {
+   "title": "Fixture FCDO news 5",
+   "description": "Fixture text.",
+   "link": "/government/news/fixture-fcdo-5",
+   "public_timestamp": "2026-11-20T08:00:00.000+00:00",
+   "content_store_document_type": "news_story",
+   "organisations": [
+    {
+     "slug": "x",
+     "title": "x"
+    }
+   ],
+   "world_locations": []
+  }
+ ],
+ "total": 8
+}

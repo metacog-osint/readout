@@ -1,0 +1,78 @@
+{
+  "program": "readout",
+  "version": "0.1",
+  "sources": [
+    {
+      "id": "kremlin-en",
+      "name": "President of Russia, English site: all publications Atom feed (en.kremlin.ru/events/all/feed), three pages",
+      "url": "https://en.kremlin.ru/",
+      "licence": "CC BY 4.0 (site footer and /about/copyrights, read 25 Nov 2026): reproduce with a reference to en.kremlin.ru; photos credited to RIA Novosti or TASS excluded. Published: title, link, time, a 400-character excerpt and up to three sentences holding a claim word; no images",
+      "use": "ingest",
+      "grade": "A2",
+      "independence_group": "kremlin"
+    },
+    {
+      "id": "govuk-news",
+      "name": "GOV.UK search API (www.gov.uk/api/search.json): news and communications from the FCDO, Ministry of Defence and Prime Minister's Office",
+      "url": "https://www.gov.uk/search/news-and-communications",
+      "licence": "Open Government Licence v3.0 (GOV.UK footer, read 25 Nov 2026): reuse with attribution. Published: title, GOV.UK's description, link, time, document type, world-location tags",
+      "use": "ingest",
+      "grade": "A2",
+      "independence_group": "uk-government"
+    },
+    {
+      "id": "eeas-press",
+      "name": "EEAS press material listing (www.eeas.europa.eu/eeas/press-material_en), two pages",
+      "url": "https://www.eeas.europa.eu/eeas/press-material_en",
+      "licence": "EEAS legal notice (read 25 Nov 2026): reuse authorised provided the source is acknowledged (Commission Decision 2011/833/EU). Published: title, category, date, link",
+      "use": "ingest",
+      "grade": "A2",
+      "independence_group": "eu-eeas"
+    },
+    {
+      "id": "un-press-sc",
+      "name": "UN Meetings Coverage, Security Council listing (press.un.org/en/content/security-council/meetings-coverage)",
+      "url": "https://press.un.org/en/content/security-council/meetings-coverage",
+      "licence": "UN terms of use (read 25 Nov 2026): personal, non-commercial use; no redistribution without permission. HELD: the lane is built and off until permission is given (Headwind publishes UN press releases as number, date and link only; Readout would add the derived outcome and countries)",
+      "use": "excluded",
+      "grade": "A2",
+      "independence_group": "un-dgc"
+    },
+    {
+      "id": "un-digital-library-votes",
+      "name": "UN Digital Library voting data (digitallibrary.un.org): how each Council member voted",
+      "url": "https://digitallibrary.un.org/",
+      "licence": "UN Digital Library terms (read 25 Nov 2026): automated downloading not allowed without the Library's approval (permissions@un.org). Not fetched; permission request drafted in docs/permission-requests.md",
+      "use": "excluded",
+      "grade": "A2",
+      "independence_group": "un-dhl"
+    },
+    {
+      "id": "au-psc",
+      "name": "AU Peace and Security Department RSS (www.peaceau.org/en/rss): PSC communiqués and press statements",
+      "url": "https://www.peaceau.org/en/page/42-psc",
+      "licence": "peaceau.org legal notice (read 25 Nov 2026): no reproduction, redistribution, compilation or derivative works without written permission (situationroom@africa-union.org). HELD: lane built and off; permission request drafted",
+      "use": "excluded",
+      "grade": "A2",
+      "independence_group": "au-psd"
+    },
+    {
+      "id": "us-state-dept",
+      "name": "US Department of State press releases and statements (www.state.gov)",
+      "url": "https://www.state.gov/",
+      "licence": "US government work, public domain in the US. Not read in v1: state.gov returned an access error to the build environment's browser on 25 Nov 2026",
+      "use": "excluded",
+      "grade": "A2",
+      "independence_group": "us-government"
+    },
+    {
+      "id": "tic-suite",
+      "name": "The suite bus (cop.theintelligence.company/data/today.geojson) and live programs' feeds, read as tips (doctrine kit tips module)",
+      "url": "https://cop.theintelligence.company/",
+      "licence": "Each program's own terms; Readout keeps pointers (program, item id, title, tier, countries, time, link), never the items' data",
+      "use": "link",
+      "grade": "A2",
+      "independence_group": "tic-suite"
+    }
+  ]
+}

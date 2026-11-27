@@ -1,0 +1,214 @@
+{
+ "type": "FeatureCollection",
+ "contract": "tic-feed/2",
+ "program": "cop",
+ "generated_at": "2026-11-25T22:00:00Z",
+ "note": "Readout test fixture: made-up items",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.0,
+     52.0
+    ]
+   },
+   "properties": {
+    "contract": "tic-feed/2",
+    "id": "NF-ANOM-fix1",
+    "program": "noisefloor",
+    "cop_program": "noisefloor",
+    "cop_stale": false,
+    "kind": "anomaly",
+    "tier": "anomaly",
+    "status_class": "assessed",
+    "title": "GPS interference newly seen near Poland (fixture)",
+    "countries": [
+     "PL"
+    ],
+    "data_as_of": "2026-11-24T20:00:00Z",
+    "published_at": "2026-11-24T20:00:00Z",
+    "link": "https://noisefloor.theintelligence.company/#NF-ANOM-fix1",
+    "sources": [
+     {
+      "publisher": "adsb-exchange",
+      "independence_group": "adsb-exchange",
+      "lineage_id": "adsb-exchange:NF-ANOM-fix1"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.5,
+     52.5
+    ]
+   },
+   "properties": {
+    "contract": "tic-feed/2",
+    "id": "WF-Z07-fix2",
+    "program": "watchfloor",
+    "cop_program": "watchfloor",
+    "cop_stale": false,
+    "kind": "anomaly",
+    "tier": "anomaly",
+    "status_class": "assessed",
+    "title": "Air activity unusual near Poland (fixture)",
+    "countries": [
+     "PL",
+     "BY"
+    ],
+    "data_as_of": "2026-11-25T03:00:00Z",
+    "published_at": "2026-11-25T03:00:00Z",
+    "link": "https://watchfloor.theintelligence.company/#WF-Z07-fix2",
+    "sources": [
+     {
+      "publisher": "flightradar",
+      "independence_group": "flightradar",
+      "lineage_id": "flightradar:WF-Z07-fix2"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     31.0,
+     49.0
+    ]
+   },
+   "properties": {
+    "contract": "tic-feed/2",
+    "id": "BO-fix3",
+    "program": "blackout",
+    "cop_program": "blackout",
+    "cop_stale": false,
+    "kind": "anomaly",
+    "tier": "anomaly",
+    "status_class": "assessed",
+    "title": "Internet drop in Ukraine (fixture)",
+    "countries": [
+     "UA"
+    ],
+    "data_as_of": "2026-11-24T08:00:00Z",
+    "published_at": "2026-11-24T08:00:00Z",
+    "link": "https://blackout.theintelligence.company/#BO-fix3",
+    "sources": [
+     {
+      "publisher": "ioda",
+      "independence_group": "ioda",
+      "lineage_id": "ioda:BO-fix3"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.0,
+     41.1
+    ]
+   },
+   "properties": {
+    "contract": "tic-feed/2",
+    "id": "WK-fix4",
+    "program": "wake",
+    "cop_program": "wake",
+    "cop_stale": false,
+    "kind": "anomaly",
+    "tier": "anomaly",
+    "status_class": "assessed",
+    "title": "Chokepoint transit unusual, Bosporus (fixture)",
+    "countries": [
+     "TR"
+    ],
+    "data_as_of": "2026-11-24T11:00:00Z",
+    "published_at": "2026-11-24T11:00:00Z",
+    "link": "https://wake.theintelligence.company/#WK-fix4",
+    "sources": [
+     {
+      "publisher": "aisstream",
+      "independence_group": "aisstream",
+      "lineage_id": "aisstream:WK-fix4"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     30.0,
+     15.0
+    ]
+   },
+   "properties": {
+    "contract": "tic-feed/2",
+    "id": "CD-fix5",
+    "program": "cordon",
+    "cop_program": "cordon",
+    "cop_stale": false,
+    "kind": "observation",
+    "tier": "routine",
+    "status_class": "assessed",
+    "title": "Travel advisory Sudan (fixture)",
+    "countries": [
+     "SD"
+    ],
+    "data_as_of": "2026-11-23T00:00:00Z",
+    "published_at": "2026-11-23T00:00:00Z",
+    "link": "https://cordon.theintelligence.company/#CD-fix5",
+    "sources": [
+     {
+      "publisher": "fcdo",
+      "independence_group": "fcdo",
+      "lineage_id": "fcdo:CD-fix5"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.5,
+     54.7
+    ]
+   },
+   "properties": {
+    "contract": "tic-feed/2",
+    "id": "NF-ANOM-fix6",
+    "program": "noisefloor",
+    "cop_program": "noisefloor",
+    "cop_stale": false,
+    "kind": "anomaly",
+    "tier": "anomaly",
+    "status_class": "assessed",
+    "title": "GPS interference near Russia, Kaliningrad (fixture)",
+    "countries": [
+     "RU"
+    ],
+    "data_as_of": "2026-11-10T00:00:00Z",
+    "published_at": "2026-11-10T00:00:00Z",
+    "link": "https://noisefloor.theintelligence.company/#NF-ANOM-fix6",
+    "sources": [
+     {
+      "publisher": "adsb-exchange",
+      "independence_group": "adsb-exchange",
+      "lineage_id": "adsb-exchange:NF-ANOM-fix6"
+     }
+    ]
+   }
+  }
+ ]
+}

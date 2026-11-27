@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142235'/%3E%3Cpath d='M8 9h16v10H14l-5 4v-4H8z' fill='none' stroke='%23e3a83b' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E">
+<title>Readout: what governments say, and what the sensors saw</title>
+<meta name="description" content="Official statements from the Kremlin, the UK government and the EU, sorted by the kind of claim they make, held against the anomalies and warnings the rest of The Intelligence Company's programs saw in the same countries. Claims, not facts.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tic-time.css">
+<link rel="stylesheet" href="tic-nav.css">
+<link rel="stylesheet" href="tic-tabs.css">
+<link rel="stylesheet" href="tic-fold.css">
+<link rel="alternate" type="application/geo+json" title="Readout feed (GeoJSON)" href="data/feed.geojson">
+<script src="tic-time.js"></script>
+<script src="tic-nav.js" defer data-current="readout"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-row">
+    <div class="brand"><strong>Readout</strong><span class="muted">The Intelligence Company</span></div>
+    <nav class="top-nav" aria-label="Data and method">
+      <a href="#method">Method</a>
+      <span id="time-settings"></span>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <noscript><p class="noscript">This page needs JavaScript to draw its tables. The feed and source code below work without it.</p></noscript>
+  <section class="hero">
+    <h1>What governments say about conflicts and deployments, and what the suite's sensors saw in the same places.</h1>
+    <p class="lede">Each row is an official statement in its speaker's own words: the Kremlin, the UK government (Foreign
+      Office, Ministry of Defence, Prime Minister's Office) and the EU's diplomatic service. Readout sorts each by the
+      kind of claim it makes and lists what other TIC programs saw in the countries it names within three days.</p>
+    <p class="small muted caveat">A statement is a claim, not a fact. A "candidate say-do gap" means a calm claim sat
+      beside unusual activity in the same country; it is a pointer to look, never a finding that anyone lied.
+      <a href="doctrine/method.md">How Readout reads them</a>.</p>
+    <details class="terms" id="terms">
+      <summary>Terms on this page</summary>
+      <dl>
+        <dt>Claim classes</dt><dd>Readout's word list sorts statements into de-escalation (ceasefire, truce,
+          withdrawal), denial (denies, baseless, fabricated), assurance (defensive, no threat, no intention), threat
+          (retaliation, will respond, consequences) and accusation (aggression, violation, provocation). The first three
+          are calm claims: they say less will happen. The matched words are shown, so you can see why.</dd>
+        <dt>Say-do pair</dt><dd>An anomaly or warning published by another TIC program (Watchfloor, Noisefloor, Wake,
+          Blackout, Cordon, Launch) in a country the statement names, within 72 hours of it, before or after.</dd>
+        <dt>Candidate say-do gap (RO-IND-1)</dt><dd>A calm claim with pairs from at least two independent sources. A
+          proposed rule, not adopted: it changes no tier and is not a warning.</dd>
+        <dt>FCDO, MOD, EEAS, High Representative</dt><dd>The UK Foreign, Commonwealth &amp; Development Office and Ministry
+          of Defence; the European External Action Service, the EU's diplomatic service, led by the High Representative
+          for Foreign Affairs and Security Policy.</dd>
+        <dt>UN Security Council, AU PSC</dt><dd>The UN's 15-member body that adopts binding resolutions, and the African
+          Union's Peace and Security Council. Both lanes are built and held until their publishers' terms are cleared.</dd>
+        <dt>Independence group</dt><dd>Sources that do not share an origin. Two programs reading the same upstream
+          source count once.</dd>
+      </dl>
+    </details>
+    <p class="small muted" id="asof" aria-live="polite">Loading…</p>
+    <div class="tiles" id="tiles" aria-live="polite"></div>
+  </section>
+
+  <div data-tic-tabs>
+  <div id="sec-saydo" data-tab-label="Say and do">
+  <section class="card" aria-labelledby="sd-h">
+    <div class="card-head"><h2 id="sd-h">Calm claims beside unusual activity</h2>
+      <p class="muted small">Statements that claim de-escalation, deny an act or give an assurance, with the anomalies
+        and warnings other TIC programs published in the countries they name within 72 hours. Candidate say-do gaps
+        (pairs from at least two independent sources, proposed rule RO-IND-1) first. Hours are from the statement:
+        negative before it, positive after.</p></div>
+    <div class="scroll"><table id="saydo" data-tic-fold data-tic-fold-find></table></div>
+    <h3 class="small">Activity near a threat</h3>
+    <p class="muted small">Statements that warn of a response, with activity in the countries they name. For context
+      only.</p>
+    <div class="scroll"><table id="threats" data-tic-fold></table></div>
+  </section>
+  </div>
+
+  <div id="sec-statements" data-tab-label="Statements">
+  <section class="card" aria-labelledby="st-h">
+    <div class="card-head"><h2 id="st-h">All statements, newest first</h2>
+      <p class="muted small">Title, speaker and date as each publishes them, with the claim class Readout's word list
+        found and the countries named. Kremlin and GOV.UK items show a short excerpt (their licences allow it); EU items
+        show the title only.</p></div>
+    <div class="filters">
+      <label>Speaker <select id="f-lane"><option value="">All</option><option value="kremlin">Kremlin</option><option value="govuk">UK government</option><option value="eeas">EU (EEAS)</option></select></label>
+      <label>Claim <select id="f-claim"><option value="">All</option><option value="calm">Calm (any)</option><option>deescalation</option><option>denial</option><option>assurance</option><option>threat</option><option>accusation</option><option value="none">none</option></select></label>
+      <label>Search <input id="f-q" type="search" placeholder="title, country, word"></label>
+      <span class="small muted" id="f-count"></span>
+    </div>
+    <div class="scroll"><table id="statements" data-tic-fold></table></div>
+  </section>
+  </div>
+
+  <div id="sec-votes" data-tab-label="Votes and communiqués">
+  <section class="card" aria-labelledby="vo-h">
+    <div class="card-head"><h2 id="vo-h">UN Security Council and AU Peace and Security Council</h2>
+      <p class="muted small">Built and held. The UN's terms allow personal, non-commercial use and no redistribution, and
+        the AU's forbid compilation without written permission, so these lanes stay off until The Intelligence Company
+        has the publishers' answer. When on, only the document number, date, outcome, countries and a link are shown.</p></div>
+    <div id="votes"></div>
+  </section>
+  </div>
+
+  <div id="sec-method" data-tab-label="Method">
+  <section class="card" id="method" aria-labelledby="me-h">
+    <div class="card-head"><h2 id="me-h">Method and licences</h2></div>
+    <div class="prose">
+      <p>Official statements as their speakers published them, a fixed word list for the kind of claim, and pointers to
+        other TIC programs' findings. No translation, no sentiment score, no judgment of truth, no forecast. Every item is
+        tier routine. Full method: <a href="doctrine/method.md">method.md</a>.</p>
+      <h3>Sources and their terms</h3>
+      <div class="scroll"><table class="plain">
+        <thead><tr><th scope="col">Publisher</th><th scope="col">Read how</th><th scope="col">Terms</th></tr></thead>
+        <tbody>
+          <tr><td>President of Russia (en.kremlin.ru)</td><td>The English site's all-publications Atom feed, three pages</td>
+            <td>CC BY 4.0 with a reference to en.kremlin.ru (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">licence</a>).
+            Photos by RIA Novosti and TASS are excluded; none are kept. Source: Presidential Press and Information Office</td></tr>
+          <tr><td>UK government (GOV.UK)</td><td>The GOV.UK search API: news and communications from the FCDO, the Ministry
+            of Defence and the Prime Minister's Office</td><td>Contains public sector information licensed under the
+            <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="noopener">Open Government Licence v3.0</a></td></tr>
+          <tr><td>European External Action Service</td><td>The press-material listing, two pages</td><td>Reuse with
+            acknowledgement of the source (Commission Decision 2011/833/EU). Title, date and link only. Source: EEAS</td></tr>
+          <tr><td>United Nations (press.un.org)</td><td>Security Council meetings coverage listing. <span class="held">Held</span></td>
+            <td>Personal, non-commercial use; no redistribution without permission. Number, date, outcome and link only</td></tr>
+          <tr><td>African Union (peaceau.org)</td><td>Peace and Security Department RSS. <span class="held">Held</span></td>
+            <td>No redistribution, compilation or derivative works without written permission</td></tr>
+          <tr><td>The Intelligence Company programs</td><td>The suite bus (COP) and the live programs' feeds, read as tips</td>
+            <td>Each program's own terms. Readout shows each item's title, tier, countries, time and a link</td></tr>
+        </tbody>
+      </table></div>
+      <p class="small">Not read in this version: the US State Department (its site refused the build environment's
+        browser on 25 Nov 2026), and UN Digital Library voting records (automated downloads need the Library's
+        approval).</p>
+      <h3>Collection</h3>
+      <div id="lanes"></div>
+    </div>
+  </section>
+  </div>
+  </div>
+</main>
+
+<footer class="wrap foot small muted">
+  <p>Readout, The Intelligence Company. Public information only, non-commercial. Not affiliated with any government or
+    body quoted here.</p>
+  <nav class="tic-data" aria-label="Data and downloads"><span class="tic-data-k">Data and downloads</span>
+    <a href="data/feed.geojson">Feed (GeoJSON)</a>
+    <a href="https://github.com/metacog-osint/readout">Source code</a></nav>
+</footer>
+<script src="tic-tabs.js"></script>
+<script src="tic-fold.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
