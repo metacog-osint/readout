@@ -18,6 +18,8 @@ still finds the tips seen yesterday.
 """
 from __future__ import annotations
 
+import re
+
 from datetime import datetime, timedelta, timezone
 
 from . import claims
@@ -49,8 +51,18 @@ def group_of(tip: dict) -> str:
     return "+".join(groups) if groups else tip["program"]
 
 
+SUITE_LINK = re.compile(r"^https://([a-z0-9-]+\.)?theintelligence\.company(/|$)")
+
+
+def suite_link(url):
+    """A tip's link when it points at a suite site, else None: an upstream publisher's page belongs to the program
+    that read it under that publisher's terms, so Readout does not republish it."""
+    return url if isinstance(url, str) and SUITE_LINK.match(url) else None
+
+
 def compact(tip: dict, seen_at: str) -> dict:
     out = {k: tip.get(k) for k in TIP_FIELDS}
+    out["link"] = suite_link(out.get("link"))
     out["group"] = group_of(tip)
     out["seen_at"] = seen_at
     return out

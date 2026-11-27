@@ -261,6 +261,29 @@ class EndToEnd(unittest.TestCase):
         errs = cli.terms_scan([bad])
         self.assertEqual(len(errs), 4, errs)
 
+    def test_terms_scan_allows_commission_subdomains_only(self):
+        ok = self.root / "ok.json"
+        ok.write_text(json.dumps({"items": [], "x": "https://transport.ec.europa.eu/news-events/news/a",
+                                  "y": "https://cop.theintelligence.company/item/1"}))
+        self.assertEqual(cli.terms_scan([ok]), [])
+        bad = self.root / "bad2.json"
+        bad.write_text(json.dumps({"items": [], "x": "https://ec.europa.eu.example.com/a",
+                                   "y": "https://travel.gc.ca/destinations/uganda"}))
+        self.assertEqual(len(cli.terms_scan([bad])), 2)
+
+    def test_suite_tips_drop_upstream_links(self):
+        self.assertIsNone(saydo.suite_link("https://travel.gc.ca/destinations/uganda"))
+        self.assertIsNone(saydo.suite_link("https://wwwnc.cdc.gov/travel/notices/level2/x"))
+        self.assertIsNone(saydo.suite_link("https://theintelligence.company.example.com/"))
+        self.assertIsNone(saydo.suite_link(None))
+        self.assertEqual(saydo.suite_link("https://cordon.theintelligence.company/#x"),
+                         "https://cordon.theintelligence.company/#x")
+        snap = {"records": {"suite": [{"program": "cordon", "item_id": "a", "link": "https://travel.gc.ca/x"},
+                                      {"program": "cop", "item_id": "b", "link": "https://cop.theintelligence.company/"}]}}
+        self.assertEqual([t["link"] for t in cli.suite_tips(snap)], [None, "https://cop.theintelligence.company/"])
+        self.assertIsNone(saydo.compact({"program": "cordon", "item_id": "a", "link": "https://travel.gc.ca/x"},
+                                        "2026-11-27T00:00:00Z")["link"])
+
     def test_failed_lane_keeps_last_good_copy(self):
         root = workdir()
         cli.collect(root=root, getter=getter, now=NOW, env={})
